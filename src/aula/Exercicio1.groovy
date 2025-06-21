@@ -1,3 +1,5 @@
+package aula
+
 class Exercicio1 {
     static void main(String[] args) {
 
@@ -11,4 +13,5 @@ class Exercicio1 {
         String frase = "O $nome tem $idade anos"
         println frase
     }
+
 }
