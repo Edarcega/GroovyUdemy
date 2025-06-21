@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="hamcrest-core-1.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Insync/edimar.arcega@hotmail.com/OneDrive/Groovy/groovy-f1-win64/1.ferramentas/jars/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$USER_HOME$/Insync/edimar.arcega@hotmail.com/OneDrive/Groovy/groovy-f1-win64/1.ferramentas/jars/hsqldb.jar!/" />
+      <root url="jar://$USER_HOME$/Insync/edimar.arcega@hotmail.com/OneDrive/Groovy/groovy-f1-win64/1.ferramentas/jars/junit-4.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
