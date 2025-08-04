@@ -21,7 +21,7 @@ class Exercicios {
     @Test
     void exercicio2() {
         Cliente c = new Cliente()
-        c.setNome "Zéxinho"
+        c.setNome "Zézinho"
         c.setData new Date()
         c.somar(1, 10)
         println(c.getNome() + " - " + c.getData())
