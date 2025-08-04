@@ -3,6 +3,8 @@ package aula
 import classes.Cliente
 import classes.ProdutoGroovy
 import org.junit.Test
+import classes.Cliente as Xu
+import static javax.swing.JFrame.EXIT_ON_CLOSE as ex
 
 class Exercicios {
 
@@ -63,4 +65,12 @@ class Exercicios {
         p.valor = 20.00 // Atiubuição direta sem uso do set
         println(p.valor)
     }
+
+    @Test
+    void exercicio6() {
+        Xu c = new Xu(nome: "Teste", data: new Date())
+        println c.getNome() + " - " + c['data']
+        println ex
+    }
+
 }
