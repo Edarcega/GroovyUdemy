@@ -2,6 +2,7 @@ package aula
 
 import classes.Cliente
 import classes.ProdutoGroovy
+import classes.Somar
 import classes.Venda
 import org.junit.Test
 import classes.Cliente as Xu
@@ -60,7 +61,7 @@ class Exercicios {
 
     @Test
     void exercicio5() {
-        ProdutoGroovy p = new ProdutoGroovy(nome: "CD",valor: 10.00)
+        ProdutoGroovy p = new ProdutoGroovy(nome: "CD", valor: 10.00)
         println(p.nome) // Acesso direto sem necessidade de usar o get ou set
         println(p.valor)
         p.valor = 20.00 // Atiubuição direta sem uso do set
@@ -81,5 +82,12 @@ class Exercicios {
         println v.Vender(100)
     }
 
+    @Test
+    void exercicio8() {
+        Somar soma = new Somar()
+        println soma.Soma(10)
+        println soma.Soma(10, 20)
+        println soma.Soma(10, 20, 30)
+    }
 
 }
