@@ -90,4 +90,15 @@ class Exercicios {
         println soma.Soma(10, 20, 30)
     }
 
+    @Test
+    void exercicio9() {
+        Cliente c = null
+        c?.nome = "Fernando"
+        println c?.getNome()
+
+        Cliente c2 = new Cliente()
+        c2?.nome = "Fernando"
+        println c2.nome
+    }
+
 }
