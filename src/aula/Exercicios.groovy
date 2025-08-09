@@ -101,4 +101,83 @@ class Exercicios {
         println c2.nome
     }
 
+    @Test
+    void exercicio10() {
+        List<String> colecao = new ArrayList<>()
+        colecao.add("Huguinho")
+        colecao.add("null")
+        colecao.add("Zéxinho")
+        colecao.add("Luizinho")
+
+//        java
+//        for (String x : colecao) {
+//            if (x != null) {
+//                x = x.toUpperCase()
+//            }
+//        }
+
+        colecao = colecao*.toUpperCase()
+        println colecao
+    }
+
+    @Test
+    void exercicio11() {
+        //java
+        try {
+            URL url = URI.create("http://www.google.com.br").toURL()
+            println url
+        } catch (Exception e) {
+            e.printStackTrace()
+        }
+
+        //groovy: Em java isso daria um erro
+        URL url = URI.create("http://www.google.com.br").toURL()
+        println url
+    }
+
+    @Test
+    void exercicio12() {
+        String nome = null
+        if (nome) {
+            println true
+        } else {
+            println false
+        }
+
+        nome = "Zázinho"
+        if (nome) {
+            println true
+        } else {
+            println false
+        }
+
+        int valor = 0
+        if (valor) {
+            println true
+        } else {
+            println false
+        }
+
+        valor = 1
+        if (valor) {
+            println true
+        } else {
+            println false
+        }
+
+        List<String> colecao = new ArrayList<>()
+        if (colecao) {
+            println true
+        } else {
+            println false
+        }
+
+        colecao.add("huguinho")
+        if (colecao) {
+            println true
+        } else {
+            println false
+        }
+    }
+
 }
