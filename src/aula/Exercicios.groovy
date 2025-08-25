@@ -1,6 +1,7 @@
 package aula
 
 import classes.Cliente
+import classes.Nota
 import classes.ProdutoGroovy
 import classes.Somar
 import classes.Venda
@@ -178,6 +179,39 @@ class Exercicios {
         } else {
             println false
         }
+    }
+
+    @Test
+    void exercicio13() {
+        Nota notaa = new Nota(itens: 2, valor: 2)
+        Nota notab = new Nota(itens: 2, valor: 2)
+        // Mesma coisa que: notac = notaa.plus(notab)
+        Nota notac = notaa + notab
+        println notac.itens + " - " + notac.valor
+        // Mesma coisa que: n1 = n1.next()
+        notaa++
+        println(notaa.itens + " - " + notaa.valor)
+    }
+
+    @Test
+    void exercicio13ponto2() {
+        // forma java
+        // BigDecimal v1 = new BigDecimal(10)
+        BigDecimal vl = 10
+        println vl
+
+        // Forma java
+        //BigDecimal x = vl.add(1)
+        vl = vl +1
+        println vl
+        println vl - 5
+
+        Date date =  new Date()
+        println date
+        date ++ // acrescenta + 1 dia
+        println date
+        date --
+        println date
     }
 
 }
